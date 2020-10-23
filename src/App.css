@@ -14,3 +14,22 @@ html {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+/* Timer */
+
+.Timer {
+  font-size: 4rem;
+}
+
+.App-header {
+  background-image: url("./imgs/cube-large.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  color: black;
+}
+.welcome {
+  text-align: left;
+  padding: 1.5rem;
+}

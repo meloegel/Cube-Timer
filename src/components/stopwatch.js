@@ -72,7 +72,7 @@ class Stopwatch extends Component {
         return (
             <div className="Stopwatch" onKeyPress={this.onKeyHit}>
 
-                <h1 >Simple Stopwatch App</h1>
+                <h1 >Cube Timer</h1>
 
                 <Timer time={time} />
 
@@ -85,6 +85,7 @@ class Stopwatch extends Component {
                 />
 
                 <LapTimeList timeList={timeList} />
+                <img src={require('../imgs/solved-small.jpg')} alt='cube solved' />
             </div>
         )
     }

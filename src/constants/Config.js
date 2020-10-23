@@ -1,4 +1,4 @@
 
 export default {
-    updateInterval: 100
+    updateInterval: 50
 }

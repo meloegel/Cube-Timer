@@ -10,6 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+          <div className='welcome'>
+            <h1>Cube Timer</h1>
+            <p>Directions: hit Spacebar to start Timer etc etc.</p>
+          </div>
         </div>
         <Stopwatch />
       </div>
