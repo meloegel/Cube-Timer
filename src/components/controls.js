@@ -15,13 +15,13 @@ class Controls extends Component {
     };
 
     render() {
-        const { isRunning, start, stop, reset, addLapTime } = this.props;
+        const { isRunning, start, stop, reset, addLapTime, resetSavedTimes } = this.props;
         return (
-            <div className="Controls" onKeyUp={start}>
+            <div className="Controls" >
                 { !isRunning ?
                     <button
                         onClick={start}
-                        id='test'
+                        id='stop-go'
                         className="Controls__button"
                         ref="startBtn" > Start </button>
                     : null}
@@ -29,7 +29,7 @@ class Controls extends Component {
                 { isRunning ?
                     <button
                         onClick={stop}
-                        id='test'
+                        id='stop-go'
                         className="Controls__button"
                         ref="stopBtn" > Stop </button>
                     : null}
@@ -37,14 +37,23 @@ class Controls extends Component {
                 <button
                     onClick={reset}
                     disabled={isRunning}
+                    id='resetBtn'
                     className="Controls__button"
                     ref="resetBtn" > Reset </button>
 
                 <button
                     onClick={addLapTime}
-                    disabled={!isRunning}
+                    id='saveTime'
+                    disabled={isRunning}
                     className="Controls__button"
-                    ref="lapBtn" > Lap Time </button>
+                    ref="lapBtn" > Save Time </button>
+
+                <button
+                    onClick={resetSavedTimes}
+                    id='clearSavedTimes'
+                    disabled={isRunning}
+                    className="Controls__button"
+                    ref="resetTimesBtn" > Reset Saved Times </button>
             </div>
         )
     }

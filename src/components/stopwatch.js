@@ -5,6 +5,7 @@ import Controls from './controls';
 import LapTimeList from './lapTimeList';
 
 import Config from '../constants/Config'
+import Scrambler from './scrambler'
 
 
 function getDefaultState() {
@@ -42,7 +43,16 @@ class Stopwatch extends Component {
         })
     }
     reset() {
-        this.setState(getDefaultState());
+        const { time } = this.state;
+        this.setState({
+            time: 0
+        });
+    }
+    resetSavedTimes() {
+        const { timeList } = this.state;
+        this.setState({
+            timeList: []
+        });
     }
     addLapTime() {
         const { time, timeList } = this.state;
@@ -53,12 +63,17 @@ class Stopwatch extends Component {
     }
     onKeyHit(e) {
         if (e.key === ' ') {
-            if (this.isRunning === true) {
-                document.getElementById('test').click()
-            } else {
-                document.getElementById('test').click()
-            }
-
+            e.preventDefault()
+            document.getElementById('stop-go').click()
+        } else if (e.key === 'b') {
+            e.preventDefault()
+            document.getElementById('resetBtn').click()
+        } else if (e.key === 'v') {
+            e.preventDefault()
+            document.getElementById('saveTime').click()
+        } else if (e.key === 'q') {
+            e.preventDefault()
+            document.getElementById('clearSavedTimes').click()
         }
     }
     componentDidMount() {
@@ -71,19 +86,16 @@ class Stopwatch extends Component {
 
         return (
             <div className="Stopwatch" onKeyPress={this.onKeyHit}>
-
                 <h1 >Cube Timer</h1>
-
                 <Timer time={time} />
-
                 <Controls
                     isRunning={isRunning}
                     start={() => this.start()}
                     stop={() => this.stop()}
                     reset={() => this.reset()}
                     addLapTime={() => this.addLapTime()}
+                    resetSavedTimes={() => this.resetSavedTimes()}
                 />
-
                 <LapTimeList timeList={timeList} />
                 <img src={require('../imgs/solved-small.jpg')} alt='cube solved' />
             </div>
