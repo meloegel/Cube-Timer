@@ -114,8 +114,8 @@ class Scrambler extends Component {
     render() {
         const { One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve, Thirteen, Fourteen, Fifteen } = this.state;
         return (
-            <div>
-                <div>
+            <div className='scrambleMoveDiv'>
+                <div className='scrambleMoveDiv'>
                     <span className='moveSpan'>{One}</span>
                     <span className='moveSpan'>{Two}</span>
                     <span className='moveSpan'>{Three}</span>
