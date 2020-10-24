@@ -23,25 +23,20 @@ html {
 }
 
 .App-header {
-  background-image: url("./imgs/cube-large.jpg");
+  background-image: url("./imgs/cube-x-large.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 32.5rem;
+  height: auto;
   color: black;
-}
-.App-footer {
-  background-image: url("./imgs/solved-large.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 120vh;
-  color: black;
-  border: 10px solid white;
 }
 .welcome {
   text-align: left;
   padding: 1.5rem;
+  width: 50%;
+}
+.welcome p {
+  font-size: 1.2rem;
 }
 .LapTime {
   text-align: center;
@@ -58,9 +53,24 @@ html {
 .scrambleDiv {
   display: flex;
   align-items: flex-end;
-  width: 55%;
   height: auto;
-  background-color: lightblue;
+  background-color: lightgray;
   font-size: 2rem;
   display: block;
+  padding: 1rem;
+}
+#cert {
+  font-size: 0.9rem;
+}
+.LapTimeList {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.Stopwatch {
+  background-color: lightgray;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
 }
