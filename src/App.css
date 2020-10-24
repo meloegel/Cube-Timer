@@ -58,7 +58,7 @@ html {
   font-size: 2rem;
   display: block;
   padding: 1rem;
-  width: 48rem;
+  width: auto;
 }
 #cert {
   font-size: 0.9rem;

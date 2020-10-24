@@ -9,11 +9,9 @@ class Controls extends Component {
         reset: PropTypes.func.isRequired,
         addLapTime: PropTypes.func.isRequired,
     };
-
     static defaultProps = {
         isRunning: false
     };
-
     render() {
         const { isRunning, start, stop, reset, addLapTime, resetSavedTimes } = this.props;
         return (
@@ -22,7 +20,7 @@ class Controls extends Component {
                     <button
                         onClick={start}
                         id='stop-go'
-                        className="Controls__button"
+                        className="ctrlBtn"
                         ref="startBtn" > Start </button>
                     : null}
 
@@ -30,7 +28,7 @@ class Controls extends Component {
                     <button
                         onClick={stop}
                         id='stop-go'
-                        className="Controls__button"
+                        className="ctrlBtn"
                         ref="stopBtn" > Stop </button>
                     : null}
 
@@ -38,21 +36,21 @@ class Controls extends Component {
                     onClick={reset}
                     disabled={isRunning}
                     id='resetBtn'
-                    className="Controls__button"
+                    className="ctrlBtn"
                     ref="resetBtn" > Reset </button>
 
                 <button
                     onClick={addLapTime}
                     id='saveTime'
                     disabled={isRunning}
-                    className="Controls__button"
+                    className="ctrlBtn"
                     ref="lapBtn" > Save Time </button>
 
                 <button
                     onClick={resetSavedTimes}
                     id='clearSavedTimes'
                     disabled={isRunning}
-                    className="Controls__button"
+                    className="ctrlBtn"
                     ref="resetTimesBtn" > Reset Saved Times </button>
             </div>
         )

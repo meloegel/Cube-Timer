@@ -4,7 +4,6 @@ function zeroPad(number, size = 2) {
     return s;
 }
 
-
 export default function timeFormat(miliseconds) {
 
     let rem = miliseconds / 1000;

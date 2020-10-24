@@ -16,11 +16,9 @@ class LapTimeList extends Component {
         return (
             <div className="LapTimeListDiv">
                 <div className="LapTimeList__listwrap">
-
                     <div className="LapTimeListHeaders">
                         <span> Lap </span> <span> Time </span>
                     </div>
-
                     <ol className="LapTimeList" >
                         {
                             timeList.map((time, index) => {

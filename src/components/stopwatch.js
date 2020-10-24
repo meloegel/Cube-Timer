@@ -14,7 +14,6 @@ function getDefaultState() {
         timeList: []
     }
 }
-
 class Stopwatch extends Component {
     constructor(props) {
         super(props);
@@ -81,11 +80,8 @@ class Stopwatch extends Component {
     componentDidMount() {
         window.addEventListener('keypress', this.onKeyHit)
     }
-
-
     render() {
         const { isRunning, time, timeList } = this.state;
-
         return (
             <div className="Stopwatch" onKeyPress={this.onKeyHit}>
                 <h1 >Cube Timer</h1>
@@ -102,7 +98,5 @@ class Stopwatch extends Component {
             </div>
         )
     }
-
 }
-
 export default Stopwatch;
