@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
+import { getDefaultNormalizer } from '@testing-library/react';
 
 
 function randNum() {
@@ -45,14 +46,32 @@ function formatMove(num) {
     }
 }
 
-function newRandNum() {
+function getDefault() {
     return {
-
+        One: formatMove(randNum()),
+        Two: formatMove(randNum()),
+        Three: formatMove(randNum()),
+        Four: formatMove(randNum()),
+        Five: formatMove(randNum()),
+        Six: formatMove(randNum()),
+        Seven: formatMove(randNum()),
+        Eight: formatMove(randNum()),
+        Nine: formatMove(randNum()),
+        Ten: formatMove(randNum()),
+        Eleven: formatMove(randNum()),
+        Twelve: formatMove(randNum()),
+        Thirteen: formatMove(randNum()),
+        Fourteen: formatMove(randNum()),
+        Fifteen: formatMove(randNum())
     }
 }
 
 
 class Scrambler extends Component {
+    constructor(props) {
+        super(props);
+        this.state = getDefault();
+    }
     static proptTypes = {
         One: PropTypes.number,
         Two: PropTypes.number,
@@ -61,6 +80,14 @@ class Scrambler extends Component {
         Five: PropTypes.number,
         Six: PropTypes.number,
         Seven: PropTypes.number,
+        Eight: PropTypes.number,
+        Nine: PropTypes.number,
+        Ten: PropTypes.number,
+        Eleven: PropTypes.number,
+        Twelve: PropTypes.number,
+        Thirteen: PropTypes.number,
+        Fourteen: PropTypes.number,
+        Fifteen: PropTypes.number,
     };
 
     static defaultProps = {
@@ -80,15 +107,17 @@ class Scrambler extends Component {
         Fourteen: formatMove(randNum()),
         Fifteen: formatMove(randNum())
     }
-
+    newRandNum() {
+        this.setState(getDefault())
+    }
 
 
     render() {
-        const { One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve, Thirteen, Fourteen, Fifteen } = this.props;
+        const { One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve, Thirteen, Fourteen, Fifteen, newRandNum } = this.state;
         return (
             <div>
                 <div>{One}, {Two}, {Three}, {Four}, {Five}, {Six}, {Seven}, {Eight}, {Nine}, {Ten}, {Eleven}, {Twelve}, {Thirteen}, {Fourteen}, {Fifteen}</div>
-                <button onClick={newRandNum()}>New Scramble</button>
+                <button onClick={() => this.newRandNum()} id='scramble'>New Scramble</button>
             </div>
         )
     }

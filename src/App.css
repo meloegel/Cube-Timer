@@ -1,10 +1,11 @@
 html {
   background-color: #282c34;
   color: white;
+  box-sizing: border-box;
 }
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   color: white;
 }
@@ -26,8 +27,17 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  height: 32.5rem;
   color: black;
+}
+.App-footer {
+  background-image: url("./imgs/solved-large.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  color: black;
+  border: 10px solid white;
 }
 .welcome {
   text-align: left;
@@ -44,4 +54,13 @@ html {
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
+}
+.scrambleDiv {
+  display: flex;
+  align-items: flex-end;
+  width: 55%;
+  height: auto;
+  background-color: lightblue;
+  font-size: 2rem;
+  display: block;
 }

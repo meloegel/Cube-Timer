@@ -74,6 +74,9 @@ class Stopwatch extends Component {
         } else if (e.key === 'q') {
             e.preventDefault()
             document.getElementById('clearSavedTimes').click()
+        } else if (e.key === 'n') {
+            e.preventDefault()
+            document.getElementById('scramble').click()
         }
     }
     componentDidMount() {
@@ -97,7 +100,6 @@ class Stopwatch extends Component {
                     resetSavedTimes={() => this.resetSavedTimes()}
                 />
                 <LapTimeList timeList={timeList} />
-                <img src={require('../imgs/solved-small.jpg')} alt='cube solved' />
             </div>
         )
     }
