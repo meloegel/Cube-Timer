@@ -7,15 +7,12 @@ function zeroPad(number, size = 2) {
 
 export default function timeFormat(miliseconds) {
 
-    let remaining = miliseconds / 1000;
-
-    const hh = parseInt(remaining / 3600, 10);
-
-    remaining %= 3600;
-
-    const mm = parseInt(remaining / 60, 10);
-    const ss = parseInt(remaining % 60, 10);
+    let rem = miliseconds / 1000;
+    // const hh = parseInt(rem/ 3600, 10);
+    rem %= 3600;
+    const mm = parseInt(rem / 60, 10);
+    const ss = parseInt(rem % 60, 10);
     const S = parseInt((miliseconds % 1000) / 100, 10);
 
-    return `${zeroPad(hh)}:${zeroPad(mm)}:${zeroPad(ss)}.${S}`;
+    return `${zeroPad(mm)}:${zeroPad(ss)}.${S}`;
 }

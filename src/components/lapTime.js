@@ -5,20 +5,17 @@ import formatTime from '../utils/formatTime';
 
 class LapTime extends Component {
     static proptTypes = {
-        lap: PropTypes.number,
         time: PropTypes.number
     };
     static defaultProps = {
-        lap: 0,
         time: 0
     };
 
     render() {
-        const { lap, time } = this.props;
+        const { time } = this.props;
         return (
             <div>
-                <span className="LapTime__lap" >{lap}</span>
-                <span className="LapTime__time" >{formatTime(time)}</span>
+                <span className="saveTime" >{formatTime(time)}</span>
             </div>
         )
     }

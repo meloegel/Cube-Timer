@@ -14,14 +14,14 @@ class LapTimeList extends Component {
     render() {
         const { timeList } = this.props;
         return (
-            <div className="LapTimeList">
+            <div className="LapTimeListDiv">
                 <div className="LapTimeList__listwrap">
 
-                    <div className="LapTimeList__headers">
+                    <div className="LapTimeListHeaders">
                         <span> Lap </span> <span> Time </span>
                     </div>
 
-                    <ul className="LapTimeList__list" >
+                    <ol className="LapTimeList" >
                         {
                             timeList.map((time, index) => {
                                 return (
@@ -31,7 +31,7 @@ class LapTimeList extends Component {
                                 )
                             })
                         }
-                    </ul>
+                    </ol>
 
                 </div>
             </div>

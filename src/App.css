@@ -42,8 +42,8 @@ html {
   text-align: center;
 }
 
-.LapTime__lap,
-.LapTime__time {
+.lap,
+.saveTime {
   width: 50%;
   padding: 5px;
   text-align: center;
@@ -58,12 +58,13 @@ html {
   font-size: 2rem;
   display: block;
   padding: 1rem;
+  width: 48rem;
 }
 #cert {
   font-size: 0.9rem;
 }
-.LapTimeList {
-  width: 50%;
+.LapTimeListDiv {
+  width: 45%;
   margin: 0 auto;
 }
 
@@ -82,4 +83,14 @@ html {
 }
 #createdBy a {
   color: blue;
+}
+.LapTimeListHeaders {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.moveSpan {
+  padding: 0.7rem;
+  border: 1px solid darkgray;
 }

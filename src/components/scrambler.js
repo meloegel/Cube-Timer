@@ -113,10 +113,26 @@ class Scrambler extends Component {
 
 
     render() {
-        const { One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve, Thirteen, Fourteen, Fifteen, newRandNum } = this.state;
+        const { One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve, Thirteen, Fourteen, Fifteen } = this.state;
         return (
             <div>
-                <div>{One}, {Two}, {Three}, {Four}, {Five}, {Six}, {Seven}, {Eight}, {Nine}, {Ten}, {Eleven}, {Twelve}, {Thirteen}, {Fourteen}, {Fifteen}</div>
+                <div>
+                    <span className='moveSpan'>{One}</span>
+                    <span className='moveSpan'>{Two}</span>
+                    <span className='moveSpan'>{Three}</span>
+                    <span className='moveSpan'>{Four}</span>
+                    <span className='moveSpan'>{Five}</span>
+                    <span className='moveSpan'>{Six}</span>
+                    <span className='moveSpan'>{Seven}</span>
+                    <span className='moveSpan'>{Eight}</span>
+                    <span className='moveSpan'>{Nine}</span>
+                    <span className='moveSpan'>{Ten}</span>
+                    <span className='moveSpan'>{Eleven}</span>
+                    <span className='moveSpan'>{Twelve}</span>
+                    <span className='moveSpan'>{Thirteen}</span>
+                    <span className='moveSpan'>{Fourteen}</span>
+                    <span className='moveSpan'>{Fifteen}</span>
+                </div>
                 <button onClick={() => this.newRandNum()} id='scramble'>New Scramble</button>
             </div>
         )
