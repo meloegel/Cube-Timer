@@ -23,6 +23,7 @@ class App extends Component {
             </div>
             <p id='cert'>**This scrambler is not WCA certified, it was created utilizing Javascripts random function and assigning the numbers to a move.**</p>
             <Stopwatch />
+            <p id='createdBy'>Created By: <a href='https://github.com/meloegel/Cube-Timer'>Mark Loegel</a></p>
           </div>
         </div>
       </div>

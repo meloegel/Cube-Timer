@@ -5,7 +5,6 @@ import Controls from './controls';
 import LapTimeList from './lapTimeList';
 
 import Config from '../constants/Config'
-import Scrambler from './scrambler'
 
 
 function getDefaultState() {

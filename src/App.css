@@ -74,3 +74,12 @@ html {
   text-align: center;
   padding: 1rem;
 }
+#createdBy {
+  font-size: 1rem;
+  text-align: right;
+  padding: 1rem;
+  margin-top: 2.5rem;
+}
+#createdBy a {
+  color: blue;
+}
