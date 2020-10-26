@@ -3,6 +3,8 @@ import './App.css';
 import Popup from 'reactjs-popup'
 import { Stopwatch } from './components';
 import Scrambler from './components/scrambler'
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
 
 class App extends Component {
 
@@ -13,16 +15,16 @@ class App extends Component {
         <div className="App-header">
           <div className='welcome'>
             <h1>Cube Timer</h1>
-            <Popup trigger={<button className="button"> About </button>} modal>
+            <Popup trigger={<Button variant='contained' size='small' color='primary' className="button"> About </Button>} modal>
               {close => (
                 <div className="modal">
                   <a className="close" onClick={close}>&times;</a>
                   <div className="aboutTitle"> About Cube Timer </div>
                   <div className="aboutPopupDiv">
-                    <p className='aboutPopupContent'>Cube Timer is for solving rubik's cubes. The scrambler algorithm provides an algorithm for you to scramble your 3x3 rubik's cube. The timer is setup to use keyboard shortcuts to better be able get accurate solve times.</p>
+                    <p className='aboutPopupContent'>Cube Timer is an aid for timing the solving of rubik's cubes. The scrambler algorithm provides an algorithm for you to scramble your 3x3 rubik's cube. The timer is setup to use keyboard shortcuts to better be able get accurate solve times.</p>
                   </div>
                   <div className="buttonPopup">
-                    <button onClick={() => { close(); }}>Close</button>
+                    <Button variant='contained' size='small' color='primary' onClick={() => { close(); }}>Close</Button>
                   </div>
                 </div>
               )}
@@ -33,10 +35,14 @@ class App extends Component {
             <p>To clear saved a times, press <strong>'q'</strong> or click Reset Saved Times</p>
             <p>To get a new scramble algorithm, press <strong>'n'</strong> or click New Scramble</p>
             <div className='scrambleDiv'>
-              <Scrambler />
+              <Card id='scrambler'>
+                <Scrambler />
+              </Card>
             </div>
             <p id='cert'>**This scrambler is not WCA certified, it was created utilizing Javascripts random function and assigning the numbers to a move.**</p>
-            <Stopwatch />
+            <Card id='stopWatch'>
+              <Stopwatch />
+            </Card>
             <p id='createdBy'>Created By: <a href='https://github.com/meloegel/Cube-Timer'>Mark Loegel</a></p>
           </div>
         </div>

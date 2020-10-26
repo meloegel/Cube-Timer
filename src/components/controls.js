@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
+import Button from '@material-ui/core/Button';
 
 class Controls extends Component {
     static proptTypes = {
@@ -17,41 +18,56 @@ class Controls extends Component {
         return (
             <div className="Controls" >
                 { !isRunning ?
-                    <button
+                    <Button
+                        variant='contained'
+                        size='small'
+                        color='primary'
                         onClick={start}
                         id='stop-go'
                         className="ctrlBtn"
-                        ref="startBtn" > Start </button>
+                        ref="startBtn" > Start </Button>
                     : null}
 
                 { isRunning ?
-                    <button
+                    <Button
+                        variant='contained'
+                        size='small'
+                        color='primary'
                         onClick={stop}
                         id='stop-go'
                         className="ctrlBtn"
-                        ref="stopBtn" > Stop </button>
+                        ref="stopBtn" > Stop </Button>
                     : null}
 
-                <button
+                <Button
+                    variant='contained'
+                    size='small'
+                    color='secondary'
                     onClick={reset}
                     disabled={isRunning}
                     id='resetBtn'
                     className="ctrlBtn"
-                    ref="resetBtn" > Reset </button>
+                    ref="resetBtn" > Reset </Button>
 
-                <button
+                <Button
+                    variant='contained'
+                    size='small'
+                    color='primary'
                     onClick={addLapTime}
                     id='saveTime'
                     disabled={isRunning}
                     className="ctrlBtn"
-                    ref="lapBtn" > Save Time </button>
+                    ref="lapBtn" > Save Time </Button>
 
-                <button
+                <Button
+                    variant='contained'
+                    size='small'
+                    color='secondary'
                     onClick={resetSavedTimes}
                     id='clearSavedTimes'
                     disabled={isRunning}
                     className="ctrlBtn"
-                    ref="resetTimesBtn" > Reset Saved Times </button>
+                    ref="resetTimesBtn" > Reset Saved Times </Button>
             </div>
         )
     }

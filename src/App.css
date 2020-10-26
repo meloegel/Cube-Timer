@@ -20,6 +20,7 @@ html {
 
 .Timer {
   font-size: 4rem;
+  padding-bottom: 2rem;
 }
 
 .App-header {
@@ -32,7 +33,7 @@ html {
 }
 .welcome {
   text-align: left;
-  padding: 1.5rem;
+  padding: 1rem;
   width: 50%;
 }
 .welcome p {
@@ -54,11 +55,9 @@ html {
   display: flex;
   align-items: flex-end;
   height: auto;
-  background-color: lightgray;
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: block;
   padding: 1rem;
-  width: 100%;
 }
 #cert {
   font-size: 0.9rem;
@@ -70,7 +69,6 @@ html {
 
 .Stopwatch {
   background-color: lightgray;
-  width: 60%;
   margin: 0 auto;
   text-align: center;
   padding: 1rem;
@@ -151,4 +149,19 @@ html {
 }
 [data-popup="tooltip"].popup-overlay {
   background: transparent;
+}
+#scrambler {
+  background-color: lightgrey;
+  padding: 0.8rem;
+}
+#stopWatch {
+  background-color: lightgrey;
+  padding: 0.8rem;
+  width: 60%;
+  margin: 0 auto;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  font-family: "Staatliches", cursive;
 }

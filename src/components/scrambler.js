@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-
+import Button from '@material-ui/core/Button';
 
 function randNum() {
     return Math.floor(Math.random() * (18 - 1) + 1)
@@ -132,7 +132,7 @@ class Scrambler extends Component {
                     <span className='moveSpan'>{Fourteen}</span>
                     <span className='moveSpan'>{Fifteen}</span>
                 </div>
-                <button onClick={() => this.newRandNum()} id='scramble'>New Scramble</button>
+                <Button variant='contained' color='primary' size='small' onClick={() => this.newRandNum()} id='scramble'>New Scramble</Button>
             </div>
         )
     }
