@@ -8,14 +8,18 @@ import Card from '@material-ui/core/Card';
 
 class App extends Component {
 
-
   render() {
     return (
       <div className="App">
         <div className="App-header">
           <div className='welcome'>
             <h1>Cube Timer</h1>
-            <Popup trigger={<Button variant='contained' size='small' color='primary' className="button"> About </Button>} modal>
+            <Popup trigger={
+              <Button
+                variant='contained'
+                size='small'
+                color='primary'
+                className="button"> About </Button>} modal>
               {close => (
                 <div className="modal">
                   <a className="close" onClick={close}>&times;</a>
@@ -24,7 +28,11 @@ class App extends Component {
                     <p className='aboutPopupContent'>Cube Timer is an aid for timing the solving of rubik's cubes. The scrambler algorithm provides an algorithm for you to scramble your 3x3 rubik's cube. The timer is setup to use keyboard shortcuts to better be able get accurate solve times.</p>
                   </div>
                   <div className="buttonPopup">
-                    <Button variant='contained' size='small' color='primary' onClick={() => { close(); }}>Close</Button>
+                    <Button
+                      variant='contained'
+                      size='small'
+                      color='primary'
+                      onClick={() => { close(); }}>Close</Button>
                   </div>
                 </div>
               )}
@@ -38,8 +46,8 @@ class App extends Component {
               <Card id='scrambler'>
                 <Scrambler />
               </Card>
+              <p id='cert'>**This scrambler is not WCA certified, it was created utilizing Javascripts random function and assigning the numbers to a move.**</p>
             </div>
-            <p id='cert'>**This scrambler is not WCA certified, it was created utilizing Javascripts random function and assigning the numbers to a move.**</p>
             <Card id='stopWatch'>
               <Stopwatch />
             </Card>

@@ -14,7 +14,7 @@ class LapTime extends Component {
     render() {
         const { time } = this.props;
         return (
-            <div>
+            <div className='LapTime'>
                 <span className="saveTime" >{formatTime(time)}</span>
             </div>
         )
