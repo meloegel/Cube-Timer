@@ -1,3 +1,11 @@
+# Cube Timer
+
+## Created By: Mark Loegel
+
+## About
+
+This project was created beacuse solving Rubik's cubes and coding are passions of mine. Cube Timer is used for timing and keeping track of your solve times. This project is perfect for cubers because it not only includes a scrambler algorithm but all of the controls can be done using your keyboard for realistic solve times.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
