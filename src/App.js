@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Popup from 'reactjs-popup'
 import { Stopwatch } from './components';
 import Scrambler from './components/scrambler'
 
@@ -13,6 +13,20 @@ class App extends Component {
         <div className="App-header">
           <div className='welcome'>
             <h1>Cube Timer</h1>
+            <Popup trigger={<button className="button"> About </button>} modal>
+              {close => (
+                <div className="modal">
+                  <a className="close" onClick={close}>&times;</a>
+                  <div className="aboutTitle"> About Cube Timer </div>
+                  <div className="aboutPopupDiv">
+                    <p className='aboutPopupContent'>Cube Timer is for solving rubik's cubes. The scrambler algorithm provides an algorithm for you to scramble your 3x3 rubik's cube. The timer is setup to use keyboard shortcuts to better be able get accurate solve times.</p>
+                  </div>
+                  <div className="buttonPopup">
+                    <button onClick={() => { close(); }}>Close</button>
+                  </div>
+                </div>
+              )}
+            </Popup>
             <p>To start and the cube timer, Press the <strong>Spacebar</strong> or click Start/Stop</p>
             <p>To reset the timer, press <strong>'b'</strong> or click Reset</p>
             <p>To save a time, press <strong>'v'</strong> or click Save Time</p>
