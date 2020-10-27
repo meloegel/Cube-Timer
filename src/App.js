@@ -37,7 +37,7 @@ class App extends Component {
                 </div>
               )}
             </Popup>
-            <p>To start and the cube timer, Press the <strong>Spacebar</strong> or click Start/Stop</p>
+            <p>To start and the cube timer, press the <strong>Spacebar</strong> or click Start/Stop</p>
             <p>To reset the timer, press <strong>'b'</strong> or click Reset</p>
             <p>To save a time, press <strong>'v'</strong> or click Save Time</p>
             <p>To clear saved a times, press <strong>'q'</strong> or click Reset Saved Times</p>
