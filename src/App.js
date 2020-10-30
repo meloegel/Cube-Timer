@@ -51,7 +51,7 @@ class App extends Component {
             <Card id='stopWatch'>
               <Stopwatch />
             </Card>
-            <p id='createdBy'>Created By: <a href='https://github.com/meloegel/Cube-Timer'>Mark Loegel</a></p>
+            <p id='createdBy'>Created By: <a target="_blank" href='https://github.com/meloegel/Cube-Timer'>Mark Loegel</a></p>
           </div>
         </div>
       </div>
