@@ -2,9 +2,31 @@
 
 ## Created By: Mark Loegel
 
+## Deployed Link: https://cube-timer.vercel.app/
+
 ## About
 
 This project was created beacuse solving Rubik's cubes and coding are passions of mine. Cube Timer is used for timing and keeping track of your solve times. This project is perfect for cubers because it not only includes a scrambler algorithm but all of the controls can be done using your keyboard for realistic solve times.
+
+## Technologies Used
+
+-React <br>
+-Material-UI <br>
+-ReactJs-Popus <br>
+
+## Code Snippets
+
+### Here is part of the scrambler algorithm
+
+[<img src="./src/imgs/Scrambler.PNG" width = "500" />]
+
+### Here is the keayboard controls setup
+
+[<img src="./src/imgs/keyboard.PNG" width = "600" />]
+
+### Here is the timer format
+
+[<img src="./src/imgs/FormatTimer.PNG" width = "800" />]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
