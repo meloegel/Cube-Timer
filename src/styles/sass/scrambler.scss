@@ -1,0 +1,28 @@
+#scrambler {
+  background-color: lightgrey;
+  padding: 0.8rem;
+}
+
+.moveSpan {
+  padding: 0.45rem;
+  border: 1px solid darkgray;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+.scrambleMoveDiv {
+  width: auto;
+}
+
+@media screen and (min-width: 1080px) {
+  .scrambleDiv {
+    width: 88%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .scrambleDiv {
+    width: 50%;
+  }
+  .LapTime {
+    width: 87%;
+  }
+}

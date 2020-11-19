@@ -1,0 +1,56 @@
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+}
+.toggle {
+  background: #f68819;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: relative;
+  transition: 0.2s;
+  width: 20px;
+}
+.toggled {
+  left: 18px;
+}
+.App-header {
+  background-image: url("../imgs/cube-x-large.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  color: black;
+}
+.darkModeDiv {
+  width: 2.3%;
+  border-radius: 2.5rem;
+  background-color: gray;
+  border: 2px solid black;
+}
+.darkModeSwitch {
+  width: 97%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.darkModeSwitch .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: -5px;
+  right: 200%;
+}
+
+.darkModeSwitch:hover .tooltiptext {
+  visibility: visible;
+}

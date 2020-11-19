@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/sass/index.scss';
 import Popup from 'reactjs-popup'
 import { Stopwatch } from './components';
 import Scrambler from './components/scrambler'

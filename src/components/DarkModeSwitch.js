@@ -4,11 +4,11 @@ import { useDarkMode } from '../utils/hooks/useDarkMode';
 
 const DarkModeSwitch = () => {
     const [darkMode, setDarkMode, toggleMode] = useDarkMode('darkModeSelect', {
-        darkMode: false
+        darkMode: true
     });
     const [state, setState] = React.useState({
-        checkedA: darkMode,
-        checkedB: !darkMode,
+        checkedA: true,
+        checkedB: false,
     });
 
     const handleChange = (event) => {
