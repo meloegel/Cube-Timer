@@ -15,6 +15,16 @@ This project was created beacuse solving Rubik's cubes and coding are passions o
 -Material-UI <br>
 -ReactJs-Popus <br>
 
+## Dark Mode
+
+<img src="./src/styles/imgs/Light.PNG" width = "500" />
+
+#### Description: Light mode
+
+<img src="./src/styles/imgs/Dark.PNG" width = "500" />
+
+#### Description: Dark Mode
+
 ## Code Snippets
 
 ### Here is part of the scrambler algorithm
