@@ -5,15 +5,23 @@ import { Stopwatch } from './components';
 import Scrambler from './components/scrambler'
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
+import DarkModeSwitch from './components/DarkModeSwitch'
+
 
 class App extends Component {
+
 
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <div >
+          <div className='darkModeSwitch'>
+            <DarkModeSwitch />
+          </div>
           <div className='welcome'>
-            <h1>Cube Timer</h1>
+            <div>
+              <h1>Cube Timer</h1>
+            </div>
             <Popup trigger={
               <Button
                 variant='contained'
