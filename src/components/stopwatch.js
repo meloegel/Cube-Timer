@@ -75,6 +75,9 @@ class Stopwatch extends Component {
         } else if (e.key === 'n') {
             e.preventDefault()
             document.getElementById('scramble').click()
+        } else if (e.key === 'd') {
+            e.preventDefault()
+            document.getElementById('darkModeSelect').click()
         }
     }
     componentDidMount() {

@@ -50,6 +50,7 @@ class App extends Component {
             <p>To save a time, press <strong>'v'</strong> or click Save Time</p>
             <p>To clear saved a times, press <strong>'q'</strong> or click Reset Saved Times</p>
             <p>To get a new scramble algorithm, press <strong>'n'</strong> or click New Scramble</p>
+            <p>To enable dark mode, press <strong>'d'</strong> or click the slider in the top right corner</p>
             <div className='scrambleDiv'>
               <Card id='scrambler'>
                 <Scrambler />

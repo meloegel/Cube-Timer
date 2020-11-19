@@ -20,6 +20,7 @@ const DarkModeSwitch = () => {
         <div className='darkModeDiv'>
             <div
                 onClick={toggleMode}
+                id='darkModeSelect'
                 name='darkModeSelect'
                 className={darkMode ? 'toggle toggled ' : 'toggle'}
             ><span class="tooltiptext">Toggle Dark Mode</span></div>

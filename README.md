@@ -19,15 +19,15 @@ This project was created beacuse solving Rubik's cubes and coding are passions o
 
 ### Here is part of the scrambler algorithm
 
-[<img src="./src/imgs/Scrambler.PNG" width = "500" />]
+<img src="./src/styles/imgs/Scrambler.PNG" width = "500" />
 
 ### Here is the keayboard controls setup
 
-[<img src="./src/imgs/keyboard.PNG" width = "600" />]
+<img src="./src/styles/imgs/keyboard.PNG" width = "600" />
 
 ### Here is the timer format
 
-[<img src="./src/imgs/FormatTimer.PNG" width = "800" />]
+<img src="./src/styles/imgs/FormatTimer.PNG" width = "800" />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
